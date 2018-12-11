@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Prime">
+  <DataContextMoniker Name="/PrimeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2898cda8-2829-4866-8156-a452f064cc5e" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/PrimeDataContext/Job" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0eeac951-f6a4-435a-ab74-bd14b6549df6" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a02ed5b-027d-47b8-8e9f-365dc0b0d8a6" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/PrimeDataContext/Client" />
+      <nestedChildShapes>
+        <elementListCompartment Id="332be026-35aa-4af4-8210-b8a1d1c50f3f" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PrimeDataContext/Client/Client_Job" />
+      <nodes>
+        <classShapeMoniker Id="2a02ed5b-027d-47b8-8e9f-365dc0b0d8a6" />
+        <classShapeMoniker Id="2898cda8-2829-4866-8156-a452f064cc5e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
