@@ -82,21 +82,20 @@ namespace ClientApp
                 
                 WindowState = FormWindowState.Minimized;
 
-                var result = channel.Register(txtMail.Text);
-                var n = channel.GetNumber(result);
-                var isPrime = IsPrime(n);
-                channel.SaveResult(result, n, isPrime);
-                MessageBox.Show($@"{n}{isPrime}");
+                while (true)
+                {
+                    var result = channel.Register(txtMail.Text);
+                    var n = channel.GetNumber(result);
+                    var isPrime = IsPrime(n);
+                    channel.SaveResult(result, n, isPrime);
+                }
+
+               // MessageBox.Show($@"{n}{isPrime}");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
-            
-               
-           
-           
         }
 
         private void Form1_Load(object sender, EventArgs e)
