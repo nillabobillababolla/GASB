@@ -21,11 +21,8 @@ namespace GasbWcf
 
                 if (clientId == Guid.Empty)
                 {
-                    var item = new Client();
-
-                    item.Id = Guid.NewGuid();
-                    item.Mail = mail;
-
+                    var item = new Client {Id = Guid.NewGuid(), Mail = mail};
+                    
                     dc.Clients.InsertOnSubmit(item);
 
                     dc.SubmitChanges();
