@@ -79,12 +79,11 @@ namespace ClientApp
                 var binding = new BasicHttpBinding();
                 var address = new EndpointAddress("http://localhost:57121/Gasb.svc");
                 var channel = ChannelFactory<IService>.CreateChannel(binding, address);
-                
+                var result = channel.Register(txtMail.Text);
                 WindowState = FormWindowState.Minimized;
 
                 while (true)
                 {
-                    var result = channel.Register(txtMail.Text);
                     var n = channel.GetNumber(result);
                     var isPrime = IsPrime(n);
                     channel.SaveResult(result, n, isPrime);
