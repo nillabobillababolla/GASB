@@ -4,8 +4,6 @@ using Gasb.Contract;
 
 namespace GasbWcf
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Gasb" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Gasb.svc or Gasb.svc.cs at the Solution Explorer and start debugging.
     public class Gasb : IService
     {
         /// <summary>
@@ -69,7 +67,6 @@ namespace GasbWcf
                     c.Assign_Date < DateTime.Now.AddMinutes(-1) &&
                     dc.Jobs.Any(j => j.Result.HasValue || j.Assign_Date > DateTime.Now.AddMinutes(-1) && j.N == c.N)).Select(c => c.N).FirstOrDefault();
 
-
                 if (n == 0)
                 {
                     n = dc.Jobs.OrderByDescending(c => c.N).Select(c => c.N).FirstOrDefault();
@@ -83,7 +80,6 @@ namespace GasbWcf
                         n = n + 2;
                     }
                 }
-                
                 
                 var item = new Job
                     { Id = Guid.NewGuid(),

@@ -40,6 +40,8 @@ namespace ClientApp
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.kapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -104,11 +106,25 @@ namespace ClientApp
             this.panel1.Size = new System.Drawing.Size(383, 100);
             this.panel1.TabIndex = 4;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 122);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -120,6 +136,7 @@ namespace ClientApp
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,6 +149,8 @@ namespace ClientApp
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem kapatToolStripMenuItem;
         private Panel panel1;
+        private Timer timer1;
+        private Label label2;
     }
 }
 

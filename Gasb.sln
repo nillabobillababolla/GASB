@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GasbWcf", "GasbWcf\GasbWcf.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gasb.Contract", "Gasb.Contract\Gasb.Contract.csproj", "{9A1BCC1B-3218-4236-A59C-F9BC2165A89F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GASB.Hosting", "GASB.Hosting\GASB.Hosting.csproj", "{36C9B042-FD76-4051-9751-48DDFA27831D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9A1BCC1B-3218-4236-A59C-F9BC2165A89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A1BCC1B-3218-4236-A59C-F9BC2165A89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A1BCC1B-3218-4236-A59C-F9BC2165A89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C9B042-FD76-4051-9751-48DDFA27831D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C9B042-FD76-4051-9751-48DDFA27831D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C9B042-FD76-4051-9751-48DDFA27831D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C9B042-FD76-4051-9751-48DDFA27831D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
