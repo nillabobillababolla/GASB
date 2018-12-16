@@ -5,11 +5,12 @@ Asal Sayı Bulucu projesi ile, gönüllü katılımcılardan oluşan bir bilgisa
 
 Proje ile, gönüllü bilgilerinin ve hesaplama sonuçlarının ortak bir veritabanı üzerinde saklandığı, bulut üzerinden çalışan bir .NET uygulaması hazırlanması amaçlanmıştır.
 
-Programı indirmek ve kullanmak için: http://gasb.hrpeak.com/
-
 KULLANILAN TEKNOLOJİLER:                                                                                                                   
 SQL SERVER                                                                                                                                 
 LİNQ TO SQL                                                                                                                               
 WCF                                                                                                                                       
 WİNDOWS FORMS APP & WİNDOWS CONSOLE APP                                                                                                   
-C#
+C#                                                                                                                                         
+
+
+Programı indirmek ve kullanmak için: http://gasb.hrpeak.com/
